@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="7080ed37-30fa-48c0-b01f-054abc34cbc4" data-root-id="1003"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1084">
+          {"88af0552-c4e9-4c5f-a6e2-51c195518655":{"roots":{"references":[{"attributes":{},"id":"1009","type":"CategoricalScale"},{"attributes":{"callback":null,"start":0},"id":"1007","type":"DataRange1d"},{"attributes":{},"id":"1011","type":"LinearScale"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"1003","subtype":"Figure","type":"Plot"},"ticker":{"id":"1014","type":"CategoricalTicker"}},"id":"1016","type":"Grid"},{"attributes":{"formatter":{"id":"1029","type":"CategoricalTickFormatter"},"plot":{"id":"1003","subtype":"Figure","type":"Plot"},"ticker":{"id":"1014","type":"CategoricalTicker"}},"id":"1013","type":"CategoricalAxis"},{"attributes":{},"id":"1029","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1033","type":"Selection"},{"attributes":{"formatter":{"id":"1031","type":"BasicTickFormatter"},"plot":{"id":"1003","subtype":"Figure","type":"Plot"},"ticker":{"id":"1018","type":"BasicTicker"}},"id":"1017","type":"LinearAxis"},{"attributes":{},"id":"1031","type":"BasicTickFormatter"},{"attributes":{"fill_color":{"field":"color"},"line_color":{"field":"color"},"top":{"field":"edadPromedioPorZona"},"width":{"value":0.8},"x":{"field":"zona"}},"id":"1024","type":"VBar"},{"attributes":{},"id":"1014","type":"CategoricalTicker"},{"attributes":{},"id":"1034","type":"UnionRenderers"},{"attributes":{"callback":null,"data":{"color":["#000003","#170F3C","#430F75","#711F81","#9E2E7E","#CB3E71","#F0605D","#FC9366","#FEC78B","#FBFCBF"],"edadPromedioPorZona":[35.82914572864322,34.945454545454545,33.38297872340426,35.539568345323744,35.75636363636364,35.77049180327869,35.24742268041237,31.074906367041198,33.05594405594405,52.0],"zona":["ZONA 1","ZONA 2","ZONA 3","ZONA 4","ZONA 5","ZONA 6","ZONA 7","ZONA 8","ZONA 9","NO DETERMINADA"]},"selected":{"id":"1033","type":"Selection"},"selection_policy":{"id":"1034","type":"UnionRenderers"}},"id":"1001","type":"ColumnDataSource"},{"attributes":{"dimension":1,"plot":{"id":"1003","subtype":"Figure","type":"Plot"},"ticker":{"id":"1018","type":"BasicTicker"}},"id":"1021","type":"Grid"},{"attributes":{},"id":"1018","type":"BasicTicker"},{"attributes":{"below":[{"id":"1013","type":"CategoricalAxis"}],"left":[{"id":"1017","type":"LinearAxis"}],"plot_height":500,"plot_width":1000,"renderers":[{"id":"1013","type":"CategoricalAxis"},{"id":"1016","type":"Grid"},{"id":"1017","type":"LinearAxis"},{"id":"1021","type":"Grid"},{"id":"1026","type":"GlyphRenderer"}],"title":{"id":"1002","type":"Title"},"toolbar":{"id":"1022","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"1005","type":"FactorRange"},"x_scale":{"id":"1009","type":"CategoricalScale"},"y_range":{"id":"1007","type":"DataRange1d"},"y_scale":{"id":"1011","type":"LinearScale"}},"id":"1003","subtype":"Figure","type":"Plot"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto"},"id":"1022","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"edadPromedioPorZona"},"width":{"value":0.8},"x":{"field":"zona"}},"id":"1025","type":"VBar"},{"attributes":{"plot":null,"text":"Promedio de Edad de Levantamiento de Cadaveres por Zonas Delimitadas en el mes de Julio de 2014"},"id":"1002","type":"Title"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1027","type":"CDSView"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1024","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1025","type":"VBar"},"selection_glyph":null,"view":{"id":"1027","type":"CDSView"}},"id":"1026","type":"GlyphRenderer"},{"attributes":{"callback":null,"factors":["ZONA 1","ZONA 2","ZONA 3","ZONA 4","ZONA 5","ZONA 6","ZONA 7","ZONA 8","ZONA 9","NO DETERMINADA"]},"id":"1005","type":"FactorRange"}],"root_ids":["1003"]},"title":"Bokeh Application","version":"1.0.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1084').textContent;
+                  var render_items = [{"docid":"88af0552-c4e9-4c5f-a6e2-51c195518655","roots":{"1003":"7080ed37-30fa-48c0-b01f-054abc34cbc4"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
